@@ -45,7 +45,7 @@ sidebar: smt-page-status
 <smt-page-status 
     class="content"
     loading="{{loading}}"
-    title="网络不给力，请稍后再试" >
+    title="网络不给力，请稍后再试">
 </smt-page-status>
 ```
 
@@ -60,9 +60,7 @@ Page({
     reloading() {
         this.setData({loading: true});
         setTimeout(() => {
-            this.setData(
-                {loading: false},
-            );
+            this.setData({loading: false});
         }, 3000);
     }
 });
